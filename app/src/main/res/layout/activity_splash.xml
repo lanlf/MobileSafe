@@ -7,10 +7,28 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
     tools:context="com.lan.mobilesafe.SplashActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="版本：1.0"
+        android:layout_centerInParent="true"
+        android:textSize="29sp"
+        android:textColor="#416ad2"
+        android:shadowRadius="3"
+        android:shadowColor="#f79d9d"
+        android:shadowDx="2"
+        android:shadowDy="3"
+        android:id="@+id/textView" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        />
+
 </RelativeLayout>
