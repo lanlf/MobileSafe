@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/home_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4eff50"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="选择联系人"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#718ad4"
+            android:textSize="33sp" />
+
+        <ListView
+            android:id="@+id/contact_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+        </ListView>
+
+    </LinearLayout>
+<ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/contact_loading"
+    android:visibility="visible"
+    android:indeterminateDrawable="@drawable/progressbar"
+    />
+
+</FrameLayout>

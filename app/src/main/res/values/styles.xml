@@ -3,12 +3,39 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
 
 
+    </style>
+
+    <!--android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="next"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:onClick="next"
+    android:background="@drawable/button"
+    android:textColor="#f9f6f6"/>-->
+    <style name="Button_next">
+        <item name="android:background">@drawable/button</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:text">"next"</item>
+        <item name="android:onClick">"next"</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Button_pre">
+        <item name="android:background">@drawable/button</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:text">"pre"</item>
+        <item name="android:onClick">"pre"</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:textColor">@android:color/black</item>
     </style>
 
 </resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/setting_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4eff50"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="默认应用设置"
+        android:textColor="#718ad4"
+        android:textSize="23sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setpassword"
+        android:textColor="@android:color/black"
+        android:text="将应用设置为默认短信应用：这样才能更好地体验我们的功能"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确    定"
+            android:id="@+id/setpassword_yes"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取    消"
+            android:id="@+id/setpassword_no"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

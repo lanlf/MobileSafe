@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/home_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4eff50"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="主要功能"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#718ad4"
+        android:textSize="33sp" />
+
+    <!--用maxLines/lines = 1都不能滚动，而singleline又被弃用，原因不明，-->
+    <!--用 scrollHorizontally="true"代替android:ellipsize="marquee"也可以实现滚动-->
+    <com.lan.mobilesafe.HomeTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:text="我不要在失败孤独中死去,我不要一直活在地下里,物质的骗局,匆匆的蚂蚁,没有文化的人不伤心"
+        />
+
+    <GridView
+        android:id="@+id/gv_home_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="20dp"
+        android:numColumns="3"
+        android:padding="10dp"
+        android:verticalSpacing="20dp">
+
+    </GridView>
+</LinearLayout>

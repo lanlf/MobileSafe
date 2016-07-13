@@ -21,14 +21,25 @@
         android:shadowColor="#f79d9d"
         android:shadowDx="2"
         android:shadowDy="3"
-        android:id="@+id/textView" />
+        android:id="@+id/tv_splash_versionname" />
 
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/progressBar"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/tv_splash_versionname"
         android:layout_centerHorizontal="true"
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_splash_update"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:textColor="#000000"
+        android:layout_marginBottom="60dp" />
+
 
 </RelativeLayout>

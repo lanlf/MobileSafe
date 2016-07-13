@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lan ="http://schemas.android.com/apk/com.lan.mobilesafe"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:showDividers = "middle" android:divider="@drawable/shape">
+    <TextView
+        android:id="@+id/setting_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4eff50"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="系统设置"
+        android:textColor="#718ad4"
+        android:textSize="33sp"
+        />
+    <com.lan.mobilesafe.SettingView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_sv"
+        lan:titles ="自动更新"
+        lan:des_on="打开自动更新提示"
+        lan:des_off="关闭自动更新提示">
+
+    </com.lan.mobilesafe.SettingView>
+
+    <com.lan.mobilesafe.SettingView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_sv1"
+        lan:titles ="自动更新"
+        lan:des_on="打开自动更新提示"
+        lan:des_off="关闭自动更新提示">
+
+    </com.lan.mobilesafe.SettingView>
+</LinearLayout>
